@@ -6,7 +6,7 @@
 /*   By: niccheva <niccheva@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/01/01 16:42:16 by niccheva          #+#    #+#             */
-/*   Updated: 2016/01/01 16:46:25 by niccheva         ###   ########.fr       */
+/*   Updated: 2016/06/09 14:13:41 by niccheva         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,7 +42,7 @@ char			*ft_strtrim(const char *s)
 		tmp = trim;
 		while (ft_isspace(*s))
 			s++;
-		while (len --)
+		while (len--)
 			*tmp++ = *s++;
 	}
 	return (trim);
