@@ -6,7 +6,7 @@
 /*   By: niccheva <niccheva@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/12/31 19:15:41 by niccheva          #+#    #+#             */
-/*   Updated: 2015/12/31 21:06:37 by niccheva         ###   ########.fr       */
+/*   Updated: 2016/06/13 10:42:38 by niccheva         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,6 +34,7 @@ int			ft_strcmp(const char *s1, const char *s2);
 char		*ft_strcpy(char *dst, const char *src);
 void		ft_strdel(char **as);
 char		*ft_strdup(const char *s);
+BOOL		ft_strend_with(const char *s, const char *search);
 BOOL		ft_strequ(const char *s1, const char *s2);
 void		ft_striter(char *s, void (*f)(char *));
 void		ft_striteri(char *s, void (*f)(unsigned int, char *));
@@ -51,6 +52,7 @@ char		*ft_strnstr(const char *s1, const char *s2, size_t n);
 char		*ft_strrchr(const char *s, int c);
 char		*ft_strtrim(const char *s);
 char		**ft_strsplit(const char *s, char c);
+BOOL		ft_strstart_with(const char *s, const char *search);
 char		*ft_strstr(const char *s1, const char *s2);
 char		*ft_strsub(const char *s, unsigned int start, size_t len);
 int			ft_tolower(int c);

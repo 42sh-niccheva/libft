@@ -6,7 +6,7 @@
 #    By: niccheva <niccheva@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/06/09 13:23:47 by niccheva          #+#    #+#              #
-#    Updated: 2016/06/09 13:41:55 by niccheva         ###   ########.fr        #
+#    Updated: 2016/06/13 10:57:36 by niccheva         ###   ########.fr        #
 #                                                                              #
 #******************************************************************************#
 
@@ -63,6 +63,7 @@ STRING		+=	string/ft_strcmp.c
 STRING		+=	string/ft_strcpy.c
 STRING		+=	string/ft_strdel.c
 STRING		+=	string/ft_strdup.c
+STRING		+=	string/ft_strend_with.c
 STRING		+=	string/ft_strequ.c
 STRING		+=	string/ft_striter.c
 STRING		+=	string/ft_striteri.c
@@ -80,6 +81,7 @@ STRING		+=	string/ft_strnstr.c
 STRING		+=	string/ft_strrchr.c
 STRING		+=	string/ft_strtrim.c
 STRING		+=	string/ft_strsplit.c
+STRING		+=	string/ft_strstart_with.c
 STRING		+=	string/ft_strstr.c
 STRING		+=	string/ft_strsub.c
 STRING		+=	string/ft_tolower.c
