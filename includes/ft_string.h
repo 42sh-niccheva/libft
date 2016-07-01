@@ -6,7 +6,7 @@
 /*   By: niccheva <niccheva@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/12/31 19:15:41 by niccheva          #+#    #+#             */
-/*   Updated: 2016/06/13 10:42:38 by niccheva         ###   ########.fr       */
+/*   Updated: 2016/07/01 10:56:20 by llapillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,6 +50,7 @@ BOOL		ft_strnequ(const char *s1, const char *s2, size_t n);
 char		*ft_strnew(size_t size);
 char		*ft_strnstr(const char *s1, const char *s2, size_t n);
 char		*ft_strrchr(const char *s, int c);
+char		*ft_strreplace(const char *s, const char *s2, const char *s3);
 char		*ft_strtrim(const char *s);
 char		**ft_strsplit(const char *s, char c);
 BOOL		ft_strstart_with(const char *s, const char *search);

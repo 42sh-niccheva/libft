@@ -6,7 +6,7 @@
 #    By: niccheva <niccheva@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/06/09 13:23:47 by niccheva          #+#    #+#              #
-#    Updated: 2016/06/13 10:57:36 by niccheva         ###   ########.fr        #
+#    Updated: 2016/07/01 11:58:49 by llapillo         ###   ########.fr        #
 #                                                                              #
 #******************************************************************************#
 
@@ -79,6 +79,7 @@ STRING		+=	string/ft_strnequ.c
 STRING		+=	string/ft_strnew.c
 STRING		+=	string/ft_strnstr.c
 STRING		+=	string/ft_strrchr.c
+STRING		+=	string/ft_strreplace.c
 STRING		+=	string/ft_strtrim.c
 STRING		+=	string/ft_strsplit.c
 STRING		+=	string/ft_strstart_with.c
