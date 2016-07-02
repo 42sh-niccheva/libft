@@ -6,7 +6,7 @@
 #    By: niccheva <niccheva@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/06/09 13:23:47 by niccheva          #+#    #+#              #
-#    Updated: 2016/07/01 11:58:49 by llapillo         ###   ########.fr        #
+#    Updated: 2016/07/02 13:05:06 by niccheva         ###   ########.fr        #
 #                                                                              #
 #******************************************************************************#
 
@@ -18,7 +18,9 @@ CFLAGS		=	-Wall -Wextra -Werror
 
 DSOURCES	=	./sources/
 
-DOBJECTS	=	./objects/
+DOBJECTS	=	objects/
+
+BUILD		=	./build
 
 INCLUDES	=	-I./includes
 
@@ -92,9 +94,9 @@ SOURCES		=	$(MEMORY)
 SOURCES		+=	$(PUTS)
 SOURCES		+=	$(STRING)
 
-OBJECTS		=	$(patsubst %.c, $(DOBJECTS)%.o, $(SOURCES))
+OBJECTS		=	$(patsubst %.c, $(BUILD)/$(DOBJECTS)%.o, $(SOURCES))
 
-DEPS		=	$(patsubst %.c, $(DOBJECTS)%.d, $(SOURCES))
+DEPS		=	$(patsubst %.c, $(BUILD)/$(DOBJECTS)%.d, $(SOURCES))
 
 DEPENDS		=	-MT $@ -MD -MP -MF $(subst .o,.d,$@)
 
@@ -102,23 +104,24 @@ all: $(NAME)
 
 $(NAME): $(OBJECTS)
 	@echo "\n\033[0;32m$(NAME) compiled:\t\033[0;m\c"
-	ar rcs $(NAME) $(OBJECTS)
+	ar rcs $(BUILD)/$(NAME) $(OBJECTS)
 
 -include $(OBJECTS:.o=.d)
 
-$(DOBJECTS)%.o: $(DSOURCES)%.c
-	@mkdir -p $(DOBJECTS)
-	@mkdir -p $(DOBJECTS)/memory/
-	@mkdir -p $(DOBJECTS)/puts/
-	@mkdir -p $(DOBJECTS)/string/
+$(BUILD)/$(DOBJECTS)%.o: $(DSOURCES)%.c
+	@mkdir -p $(BUILD)/$(DOBJECTS)
+	@mkdir -p $(BUILD)/$(DOBJECTS)/memory/
+	@mkdir -p $(BUILD)/$(DOBJECTS)/puts/
+	@mkdir -p $(BUILD)/$(DOBJECTS)/string/
 	@echo "\033[0;32m$< compiled:\t\033[0;m\c"
 	$(CC) $(CFLAGS) $(DEPENDS) -o $@ -c $< $(INCLUDES)
 
 clean:
-	@rm -rf $(DOBJECTS)
+	@rm -rf $(BUILD)/$(DOBJECTS)
 
 fclean: clean
-	@rm -f $(NAME)
+	@rm -f $(BUILD)/$(NAME)
+	@rm -rf $(BUILD)
 
 re: fclean all
 
