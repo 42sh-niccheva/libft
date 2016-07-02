@@ -6,7 +6,7 @@
 #    By: niccheva <niccheva@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/06/09 13:23:47 by niccheva          #+#    #+#              #
-#    Updated: 2016/07/02 13:05:06 by niccheva         ###   ########.fr        #
+#    Updated: 2016/07/02 22:38:08 by niccheva         ###   ########.fr        #
 #                                                                              #
 #******************************************************************************#
 
@@ -100,9 +100,9 @@ DEPS		=	$(patsubst %.c, $(BUILD)/$(DOBJECTS)%.d, $(SOURCES))
 
 DEPENDS		=	-MT $@ -MD -MP -MF $(subst .o,.d,$@)
 
-all: $(NAME)
+all: $(BUILD)/$(NAME)
 
-$(NAME): $(OBJECTS)
+$(BUILD)/$(NAME): $(OBJECTS)
 	@echo "\n\033[0;32m$(NAME) compiled:\t\033[0;m\c"
 	ar rcs $(BUILD)/$(NAME) $(OBJECTS)
 
