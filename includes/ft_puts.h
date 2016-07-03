@@ -6,7 +6,7 @@
 /*   By: niccheva <niccheva@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/12/31 18:24:13 by niccheva          #+#    #+#             */
-/*   Updated: 2015/12/31 19:16:25 by niccheva         ###   ########.fr       */
+/*   Updated: 2016/07/03 13:46:40 by niccheva         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,5 +27,9 @@ ssize_t		ft_putnewline(void);
 ssize_t		ft_putnewline_fd(const int fd);
 ssize_t		ft_putstr(const char *s);
 ssize_t		ft_putstr_fd(const char *s, const int fd);
+ssize_t		ft_putarray(const char **array, const char *sep);
+ssize_t		ft_putarray_fd(const char **array, const char *sep, const int fd);
+ssize_t		ft_putarray_nl(const char **array);
+ssize_t		ft_putarray_nl_fd(const char **array, const int fd);
 
 #endif

@@ -6,7 +6,7 @@
 #    By: niccheva <niccheva@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/06/09 13:23:47 by niccheva          #+#    #+#              #
-#    Updated: 2016/07/02 22:38:08 by niccheva         ###   ########.fr        #
+#    Updated: 2016/07/03 13:58:05 by niccheva         ###   ########.fr        #
 #                                                                              #
 #******************************************************************************#
 
@@ -46,6 +46,10 @@ PUTS		+=	puts/ft_putnewline.c
 PUTS		+=	puts/ft_putnewline_fd.c
 PUTS		+=	puts/ft_putstr.c
 PUTS		+=	puts/ft_putstr_fd.c
+PUTS		+=	puts/ft_putarray.c
+PUTS		+=	puts/ft_putarray_fd.c
+PUTS		+=	puts/ft_putarray_nl.c
+PUTS		+=	puts/ft_putarray_nl_fd.c
 
 STRING		=	string/ft_atoi.c
 STRING		+=	string/ft_isalnum.c
