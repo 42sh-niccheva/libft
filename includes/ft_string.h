@@ -6,7 +6,7 @@
 /*   By: niccheva <niccheva@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/12/31 19:15:41 by niccheva          #+#    #+#             */
-/*   Updated: 2016/07/01 10:56:20 by llapillo         ###   ########.fr       */
+/*   Updated: 2016/07/05 11:35:48 by niccheva         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,7 @@ BOOL		ft_issigned(int c);
 BOOL		ft_isspace(int c);
 BOOL		ft_isupper(int c);
 char		*ft_itoa(const int n);
+BOOL		ft_strapply_predicate(const char *s, BOOL (*predicate)(int c));
 char		*ft_strcat(char *s1, const char *s2);
 char		*ft_strchr(const char *s, int c);
 void		ft_strclr(char *s);
@@ -36,6 +37,10 @@ void		ft_strdel(char **as);
 char		*ft_strdup(const char *s);
 BOOL		ft_strend_with(const char *s, const char *search);
 BOOL		ft_strequ(const char *s1, const char *s2);
+size_t		ft_strget_occur_number(const char *s, const char *s2);
+BOOL		ft_stris_int(const char *s);
+BOOL		ft_stris_number(const char *s);
+BOOL		ft_stris_string(const char *s);
 void		ft_striter(char *s, void (*f)(char *));
 void		ft_striteri(char *s, void (*f)(unsigned int, char *));
 char		*ft_strjoin(const char *s1, const char *s2);

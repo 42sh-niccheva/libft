@@ -6,7 +6,7 @@
 #    By: niccheva <niccheva@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/06/09 13:23:47 by niccheva          #+#    #+#              #
-#    Updated: 2016/07/03 13:58:05 by niccheva         ###   ########.fr        #
+#    Updated: 2016/07/05 12:01:59 by niccheva         ###   ########.fr        #
 #                                                                              #
 #******************************************************************************#
 
@@ -62,6 +62,7 @@ STRING		+=	string/ft_issigned.c
 STRING		+=	string/ft_isspace.c
 STRING		+=	string/ft_isupper.c
 STRING		+=	string/ft_itoa.c
+STRING		+=	string/ft_strapply_predicate.c
 STRING		+=	string/ft_strcat.c
 STRING		+=	string/ft_strchr.c
 STRING		+=	string/ft_strclr.c
@@ -71,6 +72,10 @@ STRING		+=	string/ft_strdel.c
 STRING		+=	string/ft_strdup.c
 STRING		+=	string/ft_strend_with.c
 STRING		+=	string/ft_strequ.c
+STRING		+=	string/ft_strget_occur_number.c
+STRING		+=	string/ft_stris_int.c
+STRING		+=	string/ft_stris_number.c
+STRING		+=	string/ft_stris_string.c
 STRING		+=	string/ft_striter.c
 STRING		+=	string/ft_striteri.c
 STRING		+=	string/ft_strjoin.c

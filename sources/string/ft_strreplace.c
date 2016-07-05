@@ -6,38 +6,18 @@
 /*   By: llapillo <llapillo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/07/01 10:56:36 by llapillo          #+#    #+#             */
-/*   Updated: 2016/07/01 13:43:46 by llapillo         ###   ########.fr       */
+/*   Updated: 2016/07/05 11:37:40 by niccheva         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_string.h"
-
-#include "ft_puts.h"
-
-static size_t	ft_get_occur(const char *s, const char *s2)
-{
-	char		*pos;
-	char		*str;
-	size_t		occur;
-	size_t		len_s2;
-
-	len_s2 = ft_strlen(s2);
-	str = (char *)s;
-	occur = 0;
-	while ((pos = ft_strstr(str, s2)))
-	{
-		++occur;
-		str = pos + len_s2;
-	}
-	return (occur);
-}
 
 static size_t	ft_get_size(const char *s, const char *s2, size_t size_s3)
 {
 	size_t		size;
 	size_t		occur;
 
-	occur = ft_get_occur(s, s2);
+	occur = ft_strget_occur_number(s, s2);
 	size = ft_strlen(s) + (occur * (size_s3 - ft_strlen(s2)));
 	return (size);
 }
