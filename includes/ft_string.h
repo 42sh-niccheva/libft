@@ -6,7 +6,7 @@
 /*   By: niccheva <niccheva@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/12/31 19:15:41 by niccheva          #+#    #+#             */
-/*   Updated: 2016/07/05 11:35:48 by niccheva         ###   ########.fr       */
+/*   Updated: 2016/07/05 14:19:07 by niccheva         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,6 +51,7 @@ char		*ft_strmapi(const char *s, char (*f)(unsigned int, char));
 char		*ft_strncat(char *s1, const char *s2, size_t n);
 int			ft_strncmp(const char *s1, const char *s2, size_t n);
 char		*ft_strncpy(char *dst, const char *src, size_t n);
+char		*ft_strndup(const char *s, size_t size);
 BOOL		ft_strnequ(const char *s1, const char *s2, size_t n);
 char		*ft_strnew(size_t size);
 char		*ft_strnstr(const char *s1, const char *s2, size_t n);
