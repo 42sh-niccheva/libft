@@ -12,8 +12,9 @@
 
 #include "libft.h"
 #include "ft_string.h"
+#include <limits.h>
 
-static char		*ft_return_string(BOOL neg, int size, int n)
+static char		*ft_return_string(BOOL neg, int size, int n, BOOL is_min)
 {
 	char		*nbr;
 	int			i;
@@ -28,7 +29,10 @@ static char		*ft_return_string(BOOL neg, int size, int n)
 		nbr[i++] = '-';
 	while (a >= 1)
 	{
-		nbr[i] = ((n / a) + '0');
+		if (a == 1 && is_min)
+			nbr[i] = ((n / a) + 1 + '0');
+		else
+			nbr[i] = ((n / a) + '0');
 		i++;
 		n %= a;
 		a /= 10;
@@ -39,15 +43,21 @@ static char		*ft_return_string(BOOL neg, int size, int n)
 char			*ft_itoa(int n)
 {
 	BOOL		neg;
+	BOOL		is_min;
 	int			i;
 	int			size;
 
-	if (n == -2147483648)
-		return (ft_strdup("-2147483648"));
-	neg = FALSE;
-	if (n < 0)
-		neg = TRUE;
-	n = (n > 0) ? n : -n;
+	neg = TRUE;
+	is_min = TRUE;
+	if (n == INT_MIN)
+		n = INT_MAX;
+	else
+	{
+		if (n >= 0)
+			neg = FALSE;
+		n = (n > 0) ? n : -n;
+		is_min = FALSE;
+	}
 	i = 1;
 	size = 0;
 	while ((n / i) > 9)
@@ -55,5 +65,5 @@ char			*ft_itoa(int n)
 		i *= 10;
 		size++;
 	}
-	return (ft_return_string(neg, size, n));
+	return (ft_return_string(neg, size, n, is_min));
 }
