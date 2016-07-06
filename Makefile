@@ -6,7 +6,7 @@
 #    By: niccheva <niccheva@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/06/09 13:23:47 by niccheva          #+#    #+#              #
-#    Updated: 2016/07/05 14:21:51 by niccheva         ###   ########.fr        #
+#    Updated: 2016/07/06 09:17:55 by niccheva         ###   ########.fr        #
 #                                                                              #
 #******************************************************************************#
 
@@ -25,6 +25,7 @@ BUILD		=	./build
 INCLUDES	=	-I./includes
 
 MEMORY		=	memory/ft_bzero.c
+MEMORY		+=	memory/ft_get_pointer_distance.c
 MEMORY		+=	memory/ft_memalloc.c
 MEMORY		+=	memory/ft_memccpy.c
 MEMORY		+=	memory/ft_memchr.c
