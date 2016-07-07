@@ -6,7 +6,7 @@
 /*   By: niccheva <niccheva@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/07/05 10:58:27 by niccheva          #+#    #+#             */
-/*   Updated: 2016/07/05 11:30:36 by niccheva         ###   ########.fr       */
+/*   Updated: 2016/07/07 10:10:59 by niccheva         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,6 @@
 BOOL		ft_stris_int(const char *s)
 {
 	if (ft_strstart_with(s, "+") || ft_strstart_with(s, "-"))
-			return (ft_strapply_predicate(s + 1, &ft_isdigit));
+		return (ft_strapply_predicate(s + 1, &ft_isdigit));
 	return (ft_strapply_predicate(s, &ft_isdigit));
 }
