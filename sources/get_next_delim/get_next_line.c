@@ -1,22 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_next_delim.h                                   :+:      :+:    :+:   */
+/*   get_next_line.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: llapillo <llapillo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/07/05 22:10:11 by llapillo          #+#    #+#             */
-/*   Updated: 2016/07/07 10:32:26 by llapillo         ###   ########.fr       */
+/*   Created: 2016/07/07 10:16:45 by llapillo          #+#    #+#             */
+/*   Updated: 2016/07/07 10:32:35 by llapillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef GET_NEXT_DELIM_H
-# define GET_NEXT_DELIM_H
+#include "libft.h"
+#include "get_next_delim.h"
 
-# define BUF_SIZE 256
+int		get_next_line(const int fd, char **line)
+{
+	int		value;
 
-int		get_next_delim(const int fd, char **line, const char *delim);
-int		get_next_line(const int fd, char **line);
-int		get_next_word(const int fd, char **line);
-
-#endif
+	value = 0;
+	value = get_next_delim(fd, line, "\n");
+	return (value);
+}

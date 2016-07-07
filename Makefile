@@ -6,7 +6,7 @@
 #    By: niccheva <niccheva@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/06/09 13:23:47 by niccheva          #+#    #+#              #
-#    Updated: 2016/07/06 09:17:55 by niccheva         ###   ########.fr        #
+#    Updated: 2016/07/07 10:50:29 by llapillo         ###   ########.fr        #
 #                                                                              #
 #******************************************************************************#
 
@@ -101,9 +101,14 @@ STRING		+=	string/ft_strsub.c
 STRING		+=	string/ft_tolower.c
 STRING		+=	string/ft_toupper.c
 
+GET_NEXT	=	get_next_delim/get_next_delim.c
+GET_NEXT	+=	get_next_delim/get_next_line.c
+GET_NEXT	+=	get_next_delim/get_next_word.c
+
 SOURCES		=	$(MEMORY)
 SOURCES		+=	$(PUTS)
 SOURCES		+=	$(STRING)
+SOURCES		+=	$(GET_NEXT)
 
 OBJECTS		=	$(patsubst %.c, $(BUILD)/$(DOBJECTS)%.o, $(SOURCES))
 
@@ -124,6 +129,7 @@ $(BUILD)/$(DOBJECTS)%.o: $(DSOURCES)%.c
 	@mkdir -p $(BUILD)/$(DOBJECTS)/memory/
 	@mkdir -p $(BUILD)/$(DOBJECTS)/puts/
 	@mkdir -p $(BUILD)/$(DOBJECTS)/string/
+	@mkdir -p $(BUILD)/$(DOBJECTS)/get_next_delim/
 	@echo "\033[0;32m$< compiled:\t\033[0;m\c"
 	$(CC) $(CFLAGS) $(DEPENDS) -o $@ -c $< $(INCLUDES)
 
