@@ -6,7 +6,7 @@
 #    By: niccheva <niccheva@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/06/09 13:23:47 by niccheva          #+#    #+#              #
-#    Updated: 2016/07/07 10:50:29 by llapillo         ###   ########.fr        #
+#    Updated: 2016/07/08 16:14:57 by llapillo         ###   ########.fr        #
 #                                                                              #
 #******************************************************************************#
 
@@ -34,6 +34,7 @@ MEMORY		+=	memory/ft_memcpy.c
 MEMORY		+=	memory/ft_memdel.c
 MEMORY		+=	memory/ft_memmove.c
 MEMORY		+=	memory/ft_memset.c
+MEMORY		+=	memory/ft_delete_tab.c
 
 PUTS		=	puts/ft_putchar.c
 PUTS		+=	puts/ft_putchar_fd.c

@@ -6,7 +6,7 @@
 /*   By: niccheva <niccheva@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/12/31 16:03:18 by niccheva          #+#    #+#             */
-/*   Updated: 2016/07/06 09:11:47 by niccheva         ###   ########.fr       */
+/*   Updated: 2016/07/08 16:15:45 by llapillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 # include <stdlib.h>
 
 void		ft_bzero(void *s, size_t n);
+void		ft_delete_tab(char **tab);
 size_t		ft_get_pointer_distance(const char *start, const char *end);
 void		*ft_memalloc(size_t size);
 void		*ft_memccpy(void *dst, const void *src, int c, size_t n);
