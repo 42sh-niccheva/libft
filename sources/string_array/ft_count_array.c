@@ -1,28 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_delete_tab.c                                    :+:      :+:    :+:   */
+/*   ft_count_array.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: llapillo <llapillo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/07/08 16:13:25 by llapillo          #+#    #+#             */
-/*   Updated: 2016/07/08 16:15:32 by llapillo         ###   ########.fr       */
+/*   Created: 2016/07/13 10:19:10 by llapillo          #+#    #+#             */
+/*   Updated: 2016/07/13 10:34:30 by llapillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_string_array.h"
+#include <stddef.h>
 
-void	ft_delete_tab(char **tab)
+size_t	ft_count_array(const char **array)
 {
-	int	i;
+	size_t	size;
 
-	i = 0;
-	while (tab[i])
-	{
-		free(tab[i]);
-		tab[i] = NULL;
-		i++;
-	}
-	free(tab);
-	tab = NULL;
+	size = 0;
+	while (array[size])
+		++size;
+	return (size);
 }

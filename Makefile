@@ -6,7 +6,7 @@
 #    By: niccheva <niccheva@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/06/09 13:23:47 by niccheva          #+#    #+#              #
-#    Updated: 2016/07/08 16:14:57 by llapillo         ###   ########.fr        #
+#    Updated: 2016/07/13 11:05:49 by llapillo         ###   ########.fr        #
 #                                                                              #
 #******************************************************************************#
 
@@ -34,7 +34,6 @@ MEMORY		+=	memory/ft_memcpy.c
 MEMORY		+=	memory/ft_memdel.c
 MEMORY		+=	memory/ft_memmove.c
 MEMORY		+=	memory/ft_memset.c
-MEMORY		+=	memory/ft_delete_tab.c
 
 PUTS		=	puts/ft_putchar.c
 PUTS		+=	puts/ft_putchar_fd.c
@@ -106,10 +105,14 @@ GET_NEXT	=	get_next_delim/get_next_delim.c
 GET_NEXT	+=	get_next_delim/get_next_line.c
 GET_NEXT	+=	get_next_delim/get_next_word.c
 
+STR_ARRAY	=	string_array/ft_delete_array.c
+STR_ARRAY	+=	string_array/ft_count_array.c
+
 SOURCES		=	$(MEMORY)
 SOURCES		+=	$(PUTS)
 SOURCES		+=	$(STRING)
 SOURCES		+=	$(GET_NEXT)
+SOURCES		+=	$(STR_ARRAY)
 
 OBJECTS		=	$(patsubst %.c, $(BUILD)/$(DOBJECTS)%.o, $(SOURCES))
 
@@ -131,6 +134,7 @@ $(BUILD)/$(DOBJECTS)%.o: $(DSOURCES)%.c
 	@mkdir -p $(BUILD)/$(DOBJECTS)/puts/
 	@mkdir -p $(BUILD)/$(DOBJECTS)/string/
 	@mkdir -p $(BUILD)/$(DOBJECTS)/get_next_delim/
+	@mkdir -p $(BUILD)/$(DOBJECTS)/string_array/
 	@echo "\033[0;32m$< compiled:\t\033[0;m\c"
 	$(CC) $(CFLAGS) $(DEPENDS) -o $@ -c $< $(INCLUDES)
 
