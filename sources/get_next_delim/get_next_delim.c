@@ -6,11 +6,12 @@
 /*   By: llapillo <llapillo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/07/05 22:11:04 by llapillo          #+#    #+#             */
-/*   Updated: 2016/07/07 10:08:11 by niccheva         ###   ########.fr       */
+/*   Updated: 2016/07/17 22:55:44 by niccheva         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_string.h"
+#include "ft_memory.h"
 #include "get_next_delim.h"
 #include <sys/types.h>
 #include <unistd.h>

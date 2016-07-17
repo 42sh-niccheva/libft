@@ -6,11 +6,11 @@
 /*   By: llapillo <llapillo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/07/08 16:13:25 by llapillo          #+#    #+#             */
-/*   Updated: 2016/07/13 10:29:25 by llapillo         ###   ########.fr       */
+/*   Updated: 2016/07/17 22:57:41 by niccheva         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_string.h"
 #include "ft_string_array.h"
 #include <stdlib.h>
 

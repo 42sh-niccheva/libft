@@ -6,11 +6,10 @@
 /*   By: niccheva <niccheva@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/01/01 16:08:43 by niccheva          #+#    #+#             */
-/*   Updated: 2016/01/01 16:11:38 by niccheva         ###   ########.fr       */
+/*   Updated: 2016/07/17 17:16:15 by niccheva         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_memory.h"
 #include "ft_string.h"
 
 char		*ft_strncpy(char *dst, const char *src, size_t n)

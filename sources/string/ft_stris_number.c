@@ -6,11 +6,12 @@
 /*   By: niccheva <niccheva@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/07/05 11:33:08 by niccheva          #+#    #+#             */
-/*   Updated: 2016/07/05 11:53:00 by niccheva         ###   ########.fr       */
+/*   Updated: 2016/07/17 17:14:37 by niccheva         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_string.h"
+#include <stdlib.h>
 
 BOOL		ft_stris_number(const char *s)
 {

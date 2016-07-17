@@ -6,15 +6,15 @@
 /*   By: niccheva <niccheva@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/12/31 19:15:41 by niccheva          #+#    #+#             */
-/*   Updated: 2016/07/05 14:19:07 by niccheva         ###   ########.fr       */
+/*   Updated: 2016/07/17 22:57:13 by niccheva         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FT_STRING_H
 # define FT_STRING_H
 
-# include "libft.h"
-# include <unistd.h>
+# include <stddef.h>
+# include "types.h"
 
 int			ft_atoi(const char *s);
 BOOL		ft_isalnum(int c);

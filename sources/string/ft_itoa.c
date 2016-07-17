@@ -6,11 +6,10 @@
 /*   By: niccheva <niccheva@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/01/01 13:38:08 by niccheva          #+#    #+#             */
-/*   Updated: 2016/01/01 16:57:52 by niccheva         ###   ########.fr       */
+/*   Updated: 2016/07/17 17:11:34 by niccheva         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
 #include "ft_string.h"
 #include <limits.h>
 
