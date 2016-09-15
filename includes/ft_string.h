@@ -6,7 +6,7 @@
 /*   By: niccheva <niccheva@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/12/31 19:15:41 by niccheva          #+#    #+#             */
-/*   Updated: 2016/07/17 22:57:13 by niccheva         ###   ########.fr       */
+/*   Updated: 2016/09/15 09:49:21 by niccheva         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@
 # include "types.h"
 
 int			ft_atoi(const char *s);
+double		ft_atod(const char *s);
 BOOL		ft_isalnum(int c);
 BOOL		ft_isalpha(int c);
 BOOL		ft_isascii(int c);
