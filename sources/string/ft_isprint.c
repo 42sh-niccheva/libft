@@ -6,13 +6,13 @@
 /*   By: niccheva <niccheva@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/01/01 13:27:41 by niccheva          #+#    #+#             */
-/*   Updated: 2016/01/01 13:28:22 by niccheva         ###   ########.fr       */
+/*   Updated: 2016/09/15 21:20:42 by niccheva         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_string.h"
 
-BOOL	ft_isprint(int c)
+bool	ft_isprint(int c)
 {
 	return (c >= ' ' && c <= '~');
 }

@@ -6,13 +6,13 @@
 /*   By: niccheva <niccheva@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/01/01 13:21:15 by niccheva          #+#    #+#             */
-/*   Updated: 2016/01/01 13:21:50 by niccheva         ###   ########.fr       */
+/*   Updated: 2016/09/15 21:19:42 by niccheva         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_string.h"
 
-BOOL	ft_isalnum(int c)
+bool	ft_isalnum(int c)
 {
 	return (ft_isdigit(c) || ft_isalpha(c));
 }

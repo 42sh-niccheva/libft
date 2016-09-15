@@ -6,13 +6,13 @@
 /*   By: niccheva <niccheva@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/01/01 13:23:56 by niccheva          #+#    #+#             */
-/*   Updated: 2016/01/01 13:24:35 by niccheva         ###   ########.fr       */
+/*   Updated: 2016/09/15 21:20:10 by niccheva         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_string.h"
 
-BOOL	ft_isascii(int c)
+bool	ft_isascii(int c)
 {
 	return (c >= 0 && c <= 127);
 }

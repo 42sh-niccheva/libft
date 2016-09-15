@@ -6,7 +6,7 @@
 /*   By: niccheva <niccheva@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/12/31 19:15:41 by niccheva          #+#    #+#             */
-/*   Updated: 2016/09/15 09:49:21 by niccheva         ###   ########.fr       */
+/*   Updated: 2016/09/15 21:19:22 by niccheva         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,21 +14,21 @@
 # define FT_STRING_H
 
 # include <stddef.h>
-# include "types.h"
+# include <stdbool.h>
 
 int			ft_atoi(const char *s);
 double		ft_atod(const char *s);
-BOOL		ft_isalnum(int c);
-BOOL		ft_isalpha(int c);
-BOOL		ft_isascii(int c);
-BOOL		ft_isdigit(int c);
-BOOL		ft_islower(int c);
-BOOL		ft_isprint(int c);
-BOOL		ft_issigned(int c);
-BOOL		ft_isspace(int c);
-BOOL		ft_isupper(int c);
+bool		ft_isalnum(int c);
+bool		ft_isalpha(int c);
+bool		ft_isascii(int c);
+bool		ft_isdigit(int c);
+bool		ft_islower(int c);
+bool		ft_isprint(int c);
+bool		ft_issigned(int c);
+bool		ft_isspace(int c);
+bool		ft_isupper(int c);
 char		*ft_itoa(const int n);
-BOOL		ft_strapply_predicate(const char *s, BOOL (*predicate)(int c));
+bool		ft_strapply_predicate(const char *s, bool (*predicate)(int c));
 char		*ft_strcat(char *s1, const char *s2);
 char		*ft_strchr(const char *s, int c);
 void		ft_strclr(char *s);
@@ -36,12 +36,12 @@ int			ft_strcmp(const char *s1, const char *s2);
 char		*ft_strcpy(char *dst, const char *src);
 void		ft_strdel(char **as);
 char		*ft_strdup(const char *s);
-BOOL		ft_strend_with(const char *s, const char *search);
-BOOL		ft_strequ(const char *s1, const char *s2);
+bool		ft_strend_with(const char *s, const char *search);
+bool		ft_strequ(const char *s1, const char *s2);
 size_t		ft_strget_occur_number(const char *s, const char *s2);
-BOOL		ft_stris_int(const char *s);
-BOOL		ft_stris_number(const char *s);
-BOOL		ft_stris_string(const char *s);
+bool		ft_stris_int(const char *s);
+bool		ft_stris_number(const char *s);
+bool		ft_stris_string(const char *s);
 void		ft_striter(char *s, void (*f)(char *));
 void		ft_striteri(char *s, void (*f)(unsigned int, char *));
 char		*ft_strjoin(const char *s1, const char *s2);
@@ -53,14 +53,14 @@ char		*ft_strncat(char *s1, const char *s2, size_t n);
 int			ft_strncmp(const char *s1, const char *s2, size_t n);
 char		*ft_strncpy(char *dst, const char *src, size_t n);
 char		*ft_strndup(const char *s, size_t size);
-BOOL		ft_strnequ(const char *s1, const char *s2, size_t n);
+bool		ft_strnequ(const char *s1, const char *s2, size_t n);
 char		*ft_strnew(size_t size);
 char		*ft_strnstr(const char *s1, const char *s2, size_t n);
 char		*ft_strrchr(const char *s, int c);
 char		*ft_strreplace(const char *s, const char *s2, const char *s3);
 char		*ft_strtrim(const char *s);
 char		**ft_strsplit(const char *s, char c);
-BOOL		ft_strstart_with(const char *s, const char *search);
+bool		ft_strstart_with(const char *s, const char *search);
 char		*ft_strstr(const char *s1, const char *s2);
 char		*ft_strsub(const char *s, unsigned int start, size_t len);
 int			ft_tolower(int c);

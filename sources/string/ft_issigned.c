@@ -6,13 +6,13 @@
 /*   By: niccheva <niccheva@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/01/01 13:28:57 by niccheva          #+#    #+#             */
-/*   Updated: 2016/01/01 17:33:12 by niccheva         ###   ########.fr       */
+/*   Updated: 2016/09/15 21:20:50 by niccheva         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_string.h"
 
-BOOL	ft_issigned(int c)
+bool	ft_issigned(int c)
 {
 	return (c == '-' || c == '+');
 }
