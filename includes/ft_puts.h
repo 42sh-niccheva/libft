@@ -6,7 +6,7 @@
 /*   By: niccheva <niccheva@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/12/31 18:24:13 by niccheva          #+#    #+#             */
-/*   Updated: 2016/07/17 17:22:56 by niccheva         ###   ########.fr       */
+/*   Updated: 2016/09/16 10:40:17 by llapillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 
 # include <unistd.h>
 
+void		ft_perror(const char *s);
 ssize_t		ft_putchar(const char c);
 ssize_t		ft_putchar_fd(const char c, const int fd);
 ssize_t		ft_putendl(const char *s);
